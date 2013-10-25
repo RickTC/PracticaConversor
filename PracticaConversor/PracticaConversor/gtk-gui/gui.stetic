@@ -14,13 +14,13 @@
     <property name="WindowPosition">CenterOnParent</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
-      <widget class="Gtk.Fixed" id="fixed1">
+      <widget class="Gtk.Fixed" id="dolar1">
         <property name="MemberName" />
         <property name="HasWindow">False</property>
         <child>
-          <widget class="Gtk.Label" id="label1">
+          <widget class="Gtk.Label" id="peso2">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">label1</property>
+            <property name="LabelProp" translatable="yes">Pesos</property>
           </widget>
           <packing>
             <property name="X">55</property>
@@ -28,7 +28,7 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Entry" id="entry2">
+          <widget class="Gtk.Entry" id="peso">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="IsEditable">True</property>
@@ -40,9 +40,9 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Label" id="label2">
+          <widget class="Gtk.Label" id="cambiar">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">label2</property>
+            <property name="LabelProp" translatable="yes">Tipo de cambio</property>
           </widget>
           <packing>
             <property name="X">55</property>
@@ -50,7 +50,7 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Entry" id="entry3">
+          <widget class="Gtk.Entry" id="cambio">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="IsEditable">True</property>
@@ -62,7 +62,7 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Entry" id="entry1">
+          <widget class="Gtk.Entry" id="dolar">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="IsEditable">True</property>
@@ -74,23 +74,14 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Label" id="label3">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">label3</property>
-          </widget>
-          <packing>
-            <property name="X">313</property>
-            <property name="Y">90</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="button2">
+          <widget class="Gtk.Button" id="limpia">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">GtkButton</property>
+            <property name="Label" translatable="yes">Limpiar</property>
             <property name="UseUnderline">True</property>
             <property name="BorderWidth">6</property>
+            <signal name="Clicked" handler="OnLimpiaClicked" />
           </widget>
           <packing>
             <property name="X">165</property>
@@ -98,17 +89,28 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Button" id="button1">
+          <widget class="Gtk.Button" id="cambia">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">GtkButton</property>
+            <property name="Label" translatable="yes">Cambiar</property>
             <property name="UseUnderline">True</property>
             <property name="BorderWidth">6</property>
+            <signal name="Clicked" handler="OnCambiaClicked" />
           </widget>
           <packing>
             <property name="X">275</property>
             <property name="Y">231</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="dolares">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Pesos en Dolares</property>
+          </widget>
+          <packing>
+            <property name="X">279</property>
+            <property name="Y">97</property>
           </packing>
         </child>
       </widget>
