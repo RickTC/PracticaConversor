@@ -41,6 +41,8 @@ public partial class MainWindow: Gtk.Window
 
 	protected void OnLimpiaClicked (object sender, System.EventArgs e)
 	{
-		throw new System.NotImplementedException ();
+		peso.Text="";
+		cambio.Text= "";
+		dolar.Text="";
 	}
 }
